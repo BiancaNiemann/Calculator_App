@@ -6,46 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=League+Spartan:wght@700&display=swap"
+    rel="stylesheet">
   <link href="index.css" rel="stylesheet">
   <title>Frontend Mentor | Calculator app</title>
 </head>
 
-<body>
-  <div class="inputTotalBox flex">
-    <h5 class="flex total">Total: <span id="total"></span></h5>
-    <input id="input" class="inputbox">
-  </div>
+<body class="dark-full-background">
+  <div class="container">
 
-  <div>
-    <div>
-      <button class="numberButton" value=7>7</button>
-      <button class="numberButton" value=8>8</button>
-      <button class="numberButton" value=9>9</button>
-      <button id="delete">DEL</button>
-    </div>
-    <div>
-      <button class="numberButton" value=4>4</button>
-      <button class="numberButton" value=5>5</button>
-      <button class="numberButton" value=6>6</button>
-      <button class="operatorButton" value=+>+</button>
-    </div>
-    <div>
-      <button class="numberButton" value=1>1</button>
-      <button class="numberButton" value=2>2</button>
-      <button class="numberButton" value=3>3</button>
-      <button class="operatorButton" value=->-</button>
-    </div>
-    <div>
-      <button class="numberButton" value=.>.</button>
-      <button class="numberButton" value=0>0</button>
-      <button class="operatorButton" value="/">/</button>
-      <button class="operatorButton" value=*>x</button>
-    </div>
-    <div>
-      <button id="reset">RESET</button>
-      <button id="equals" class="">=</button>
+    <div class="flex header">
+      <h1 class="white-text">calc</h1>
+      <div class="flex">
+        <h3 class="white-text uppercase">Theme</h3>
+        <div class="flex">
+          <div>
+            <div class="flex white-text">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <div class="dotBox flex dark-toggle-input-background radius">
+              <div class="dot"></div>
+              <div class="dot red-background"></div>
+              <div class="dot red-background"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+
+    <div class="inputTotalBox flex dark-toggle-input-background radius">
+      <h5 class="flex total white-text" id="total"></h5>
+      <input id="input" class="inputbox white-text">
+    </div>
+
+    <div class="dark-main-background keypad-box radius flex light-yellow-text">
+      <div class="button-row">
+        <button class="numberButton dark-grey-blue-text" value=7>7</button>
+        <button class="numberButton dark-grey-blue-text" value=8>8</button>
+        <button class="numberButton dark-grey-blue-text" value=9>9</button>
+        <button id="delete" class="uppercase grey-background white-text">del</button>
+      </div>
+      <div>
+        <button class="numberButton dark-grey-blue-text" value=4>4</button>
+        <button class="numberButton dark-grey-blue-text" value=5>5</button>
+        <button class="numberButton dark-grey-blue-text" value=6>6</button>
+        <button class="operatorButton dark-grey-blue-text" value=+>+</button>
+      </div>
+      <div>
+        <button class="numberButton dark-grey-blue-text" value=1>1</button>
+        <button class="numberButton dark-grey-blue-text" value=2>2</button>
+        <button class="numberButton dark-grey-blue-text" value=3>3</button>
+        <button class="operatorButton dark-grey-blue-text" value=->-</button>
+      </div>
+      <div>
+        <button class="numberButton dark-grey-blue-text" value=.>.</button>
+        <button class="numberButton dark-grey-blue-text" value=0>0</button>
+        <button class="operatorButton dark-grey-blue-text" value="/">/</button>
+        <button class="operatorButton dark-grey-blue-text" value=*>x</button>
+      </div>
+      <div>
+        <button id="reset" class="uppercase grey-background white-text lg-button">reset</button>
+        <button id="equals" class="large-button red-background white-text lg-button">=</button>
+      </div>
+
+    </div>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
