@@ -3,3 +3,36 @@
 *{
     background-color: pink;
 }
+
+.inputTotalBox{
+    flex-direction: column;
+    background-color: hsl(228, 45%, 44%);
+    border: 2px solid black;
+    width: 20em;
+    margin-bottom: 2em;
+    align-items: end;
+    padding: 1em;
+}
+
+.total{
+    width: 8em;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.total span,
+.total,
+.inputbox{
+    background-color: transparent;
+}
+
+.flex{
+    display: flex;
+}
+
+.inputbox{
+    border: none;
+    text-align: end;
+    margin-top: 1.5em;
+}
+

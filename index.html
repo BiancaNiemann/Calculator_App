@@ -11,32 +11,35 @@
 </head>
 
 <body>
-  <input id="input">
-  <h5 id="total"></h5>
+  <div class="inputTotalBox flex">
+    <h5 class="flex total">Total: <span id="total"></span></h5>
+    <input id="input" class="inputbox">
+  </div>
+
   <div>
     <div>
-      <button id="seven" class="numberButton" value=7>7</button>
-      <button id="eight" class="numberButton" value=8>8</button>
-      <button id="nine" class="numberButton" value=9>9</button>
+      <button class="numberButton" value=7>7</button>
+      <button class="numberButton" value=8>8</button>
+      <button class="numberButton" value=9>9</button>
       <button id="delete">DEL</button>
     </div>
     <div>
-      <button id="four" class="numberButton" value=4>4</button>
-      <button id="five" class="numberButton" value=5>5</button>
-      <button id="six" class="numberButton" value=6>6</button>
-      <button id="plus" class="numberButton calcButton" value=+>+</button>
+      <button class="numberButton" value=4>4</button>
+      <button class="numberButton" value=5>5</button>
+      <button class="numberButton" value=6>6</button>
+      <button class="operatorButton" value=+>+</button>
     </div>
     <div>
-      <button id="one" class="numberButton" value=1>1</button>
-      <button id="two" class="numberButton" value=2>2</button>
-      <button id="three" class="numberButton" value=3>3</button>
-      <button id="minus" class="numberButton calcButton" value=->-</button>
+      <button class="numberButton" value=1>1</button>
+      <button class="numberButton" value=2>2</button>
+      <button class="numberButton" value=3>3</button>
+      <button class="operatorButton" value=->-</button>
     </div>
     <div>
-      <button id="point" class="numberButton" value=.>.</button>
-      <button id="nill" class="numberButton" value=0>0</button>
-      <button id="divide" class="numberButton" value="/">/</button>
-      <button id="multipy" class="numberButton" value=*>x</button>
+      <button class="numberButton" value=.>.</button>
+      <button class="numberButton" value=0>0</button>
+      <button class="operatorButton" value="/">/</button>
+      <button class="operatorButton" value=*>x</button>
     </div>
     <div>
       <button id="reset">RESET</button>
