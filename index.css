@@ -1,4 +1,4 @@
-.attribution { font-size: 50px; text-align: center; }
+.attribution { font-size: 50px; text-align: center; font-size: 1.25rem;}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
@@ -19,27 +19,20 @@
    /*Text Color*/
 /*------------------*/
 
-.light-yellow-text{
-    color: hsl(52, 100%, 62%);
-}
+
 
 .dark-blue-text{
     color: hsl(198, 20%, 13%);
 }
 
-.white-text{
-    color: hsl(0, 0%, 100%)
-}
 
-.dark-grey-blue-text{
-    color: hsl(221, 14%, 31%);
-}
 
 /*-------------------*/
    /*Theme 1*/
 /*------------------*/
 .red-background{
-    background-color: hsl(6, 63%, 50%);;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 4px 1px hsl(6, 70%, 34%);
 }
 
 .dark-full-background{
@@ -58,11 +51,62 @@
 
 .grey-background{
     background-color: hsl(225, 21%, 49%);
+    box-shadow: 0 4px 1px hsl(224, 28%, 35%);
+    
+}
+
+.grey-orange-background{
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0 4px 1px hsl(28, 16%, 65%);
+}
+
+.white-text{
+    color: hsl(0, 0%, 100%)
+}
+
+.dark-grey-blue-text{
+    color: hsl(221, 14%, 31%);
+}
+
+/*-------------------*/
+   /*Theme 2*/
+/*------------------*/
+
+.very-light-background{
+    background-color: hsl(0, 0%, 93%);
+}
+
+.light-grey-background{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.white-background{
+    background-color: hsl(0, 0%, 100%)
+}
+
+.dark-grey-yellow-text{
+    color: hsl(60, 10%, 19%)
+}
+
+/*-------------------*/
+   /*Theme 3*/
+/*------------------*/
+
+.dark-violet{
+    background-color: hsl(268, 75%, 9%);
+}
+
+.very-dark-violet{
+    background-color: hsl(268, 71%, 12%);
+}
+
+.light-yellow-text{
+    color: hsl(52, 100%, 62%);
 }
 
 
 
-
+/*Main styling*/
 
 .container{
     width: 375px;
@@ -82,20 +126,43 @@
     height: 2em;
     justify-content: center;
     align-items: center;
+    margin-top: 0.5em;
 }
 
 .dot{
     width: 1.5em;
     height: 1.5em;;
     border-radius: 50%;
+    box-shadow: none;
+}
+
+.theme-box{
+    align-items: end;
+}
+
+.calc{
+    margin-bottom: 0;
+    margin-top:0;
+    padding-top: 1em;
+    font-size: 3rem;
+}
+
+.theme{
+    margin-bottom: 0.5em;
+    margin-right: 1.5em;
+}
+
+.theme-numbers > p{
+    width: 1.7em;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 /*Input */
 
 .inputTotalBox{
     flex-direction: column;
-    width: 375px;
-    height: 6em;
+    height: 7em;
     margin-bottom: 1.75em;
     align-items: end;
     padding: 1em;
@@ -122,7 +189,7 @@
 /*Keypad*/
 
 .keypad-box{
-    height: 20em;
+    height: 30em;
     flex-direction: column;
     justify-content: space-around;
     padding: 1em
@@ -135,13 +202,33 @@
 }
 
 button{
-    height: 1.5em;
-    width: 2.5em;
+    height: 2.25em;
+    width: 2.25em;
     border-radius: 10px;
     font-family: inherit;
     font-size: 2rem;
+    border: none;
 }
 
 .lg-button{
     width: 5em;
 }
+
+@media only screen and (min-width: 600px) {
+    .container {
+      width: 450px;
+    }
+
+    .keypad-box{
+        height: 28em;
+    }
+
+    button{
+        width: 2.85em;
+        height: 2em;
+    }
+
+    .lg-button{
+        width: 6em;
+    }
+  }
