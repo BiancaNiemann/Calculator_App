@@ -89,17 +89,13 @@ function deleteLastInoutEntered() {
 }
 deleteLastInoutEntered()
 
-function themeChoice(e) {
-
-}
-
 function dotClick() {
     for (let i = 0; i < dotEl.length; i++) {
         dotEl[i].addEventListener('click', (e) => {
-            dotEl[i].classList.add('red-background')
             if (i === 0) {
-                dotEl[1].classList.remove('red-background')
-                dotEl[2].classList.remove('red-background')
+                dotEl[1].classList.remove('orange-background')
+                dotEl[2].classList.remove('cyan-background')
+                dotEl[0].classList.add('red-background')
                 //Main Background
                 document.getElementById('body').classList.remove('very-light-background')
                 document.getElementById('body').classList.remove('dark-violet')
@@ -112,6 +108,14 @@ function dotClick() {
                 document.getElementById('header').classList.remove('dark-blue-text')
                 document.getElementById('header').classList.remove('light-yellow-text')
                 document.getElementById('header').classList.add('white-text')
+                //input amount text
+                inputEl.classList.remove('dark-blue-text')
+                inputEl.classList.remove('light-yellow-text')
+                inputEl.classList.add('white-text')    
+                //Total amount text
+                totalEl.classList.remove('dark-blue-text')
+                totalEl.classList.remove('light-yellow-text')
+                totalEl.classList.add('white-text')              
                 //Toggle box
                 document.getElementById('toggle').classList.remove('very-dark-violet')
                 document.getElementById('toggle').classList.remove('light-grey-background')
@@ -120,10 +124,35 @@ function dotClick() {
                 document.getElementById('inputBox').classList.remove('very-dark-violet')
                 document.getElementById('inputBox').classList.remove('white-background')
                 document.getElementById('inputBox').classList.add('dark-toggle-input-background')
+                //Equals key
+                equalsEl.classList.remove('orange-key-background')
+                equalsEl.classList.remove('cyan-key-background')
+                equalsEl.classList.add('red-background')
+                //Reset key
+                resetEl.classList.remove('blue-key-background')
+                resetEl.classList.remove('purple-key-background')
+                resetEl.classList.add('red-background')
+                //Delete key
+                deleteEl.classList.remove('blue-key-background')
+                deleteEl.classList.remove('purple-key-background')
+                deleteEl.classList.add('red-background')
+                //Number keys
+                for(let i = 0; i < numberButtonEl.length; i++){
+                    numberButtonEl[i].classList.remove('grey-yellow-key-background' , 'dark-grey-yellow-text')
+                    numberButtonEl[i].classList.remove('very-dark-purple-key-background' , 'light-yellow-text')
+                    numberButtonEl[i].classList.add('grey-orange-background' ,'dark-grey-blue-text')
+                }
+                //Operator keys
+                for(let i = 0; i < operatorButtonEl.length; i++){
+                    operatorButtonEl[i].classList.remove('grey-yellow-key-background' , 'dark-grey-yellow-text')
+                    operatorButtonEl[i].classList.remove('very-dark-purple-key-background' , 'light-yellow-text')
+                    operatorButtonEl[i].classList.add('grey-orange-background' ,'dark-grey-blue-text')
+                }
             }
             if (i === 1) {
+                dotEl[1].classList.add('orange-background')
+                dotEl[2].classList.remove('cyan-background')
                 dotEl[0].classList.remove('red-background')
-                dotEl[2].classList.remove('red-background')
                 //Main Background
                 document.getElementById('body').classList.remove('dark-full-background')
                 document.getElementById('body').classList.remove('dark-violet')
@@ -136,6 +165,14 @@ function dotClick() {
                 document.getElementById('header').classList.remove('light-yellow-text')
                 document.getElementById('header').classList.remove('white-text')
                 document.getElementById('header').classList.add('dark-blue-text')
+                //input amount text
+                inputEl.classList.add('dark-blue-text')
+                inputEl.classList.remove('light-yellow-text')
+                inputEl.classList.remove('white-text')    
+                //Total amount text
+                totalEl.classList.add('dark-blue-text')
+                totalEl.classList.remove('light-yellow-text')
+                totalEl.classList.remove('white-text')  
                 //Toggle box
                 document.getElementById('toggle').classList.remove('very-dark-violet')
                 document.getElementById('toggle').classList.remove('dark-toggle-input-background')
@@ -144,10 +181,35 @@ function dotClick() {
                 document.getElementById('inputBox').classList.remove('very-dark-violet')
                 document.getElementById('inputBox').classList.remove('dark-toggle-input-background')
                 document.getElementById('inputBox').classList.add('white-background')
+                //Equals key
+                equalsEl.classList.add('orange-key-background')
+                equalsEl.classList.remove('cyan-key-background')
+                equalsEl.classList.remove('red-background')
+                //Reset key
+                resetEl.classList.add('blue-key-background')
+                resetEl.classList.remove('purple-key-background')
+                resetEl.classList.remove('red-background')
+                //Delete key
+                deleteEl.classList.add('blue-key-background')
+                deleteEl.classList.remove('purple-key-background')
+                deleteEl.classList.remove('red-background')
+                //Number keys
+                for(let i = 0; i < numberButtonEl.length; i++){
+                    numberButtonEl[i].classList.add('grey-yellow-key-background' , 'dark-grey-yellow-text')
+                    numberButtonEl[i].classList.remove('very-dark-purple-key-background' , 'light-yellow-text')
+                    numberButtonEl[i].classList.remove('grey-orange-background' ,'dark-grey-blue-text')
+                }
+                //Operator keys
+                for(let i = 0; i < operatorButtonEl.length; i++){
+                    operatorButtonEl[i].classList.add('grey-yellow-key-background' , 'dark-grey-yellow-text')
+                    operatorButtonEl[i].classList.remove('very-dark-purple-key-background' , 'light-yellow-text')
+                    operatorButtonEl[i].classList.remove('grey-orange-background' ,'dark-grey-blue-text')
+                }
             }
             if (i === 2) {
-                dotEl[0].classList.remove('red-background')
-                dotEl[1].classList.remove('red-background')
+                dotEl[1].classList.remove('orange-background')
+                dotEl[2].classList.add('cyan-background')
+                dotEl[0].classList.remove( 'red-background')
                 //Main Background
                 document.getElementById('body').classList.remove('dark-full-background')
                 document.getElementById('body').classList.remove('very-light-background')
@@ -160,6 +222,14 @@ function dotClick() {
                 document.getElementById('header').classList.remove('dark-blue-text')
                 document.getElementById('header').classList.remove('white-text')
                 document.getElementById('header').classList.add('light-yellow-text')
+                //input amount text
+                inputEl.classList.remove('dark-blue-text')
+                inputEl.classList.add('light-yellow-text')
+                inputEl.classList.remove('white-text')    
+                //Total amount text
+                totalEl.classList.remove('dark-blue-text')
+                totalEl.classList.add('light-yellow-text')
+                totalEl.classList.remove('white-text')  
                 //Toggle box
                 document.getElementById('toggle').classList.remove('dark-toggle-input-background')
                 document.getElementById('toggle').classList.remove('light-grey-background')
@@ -168,6 +238,30 @@ function dotClick() {
                 document.getElementById('inputBox').classList.remove('dark-toggle-input-background')
                 document.getElementById('inputBox').classList.remove('white-background')
                 document.getElementById('inputBox').classList.add('very-dark-violet')
+                //Equals key
+                equalsEl.classList.remove('orange-key-background')
+                equalsEl.classList.add('cyan-key-background')
+                equalsEl.classList.remove('red-background')
+                //Reset key
+                resetEl.classList.remove('blue-key-background')
+                resetEl.classList.add('purple-key-background')
+                resetEl.classList.remove('red-background')
+                //Delete key
+                deleteEl.classList.remove('blue-key-background')
+                deleteEl.classList.add('purple-key-background')
+                deleteEl.classList.remove('red-background')
+                //Number keys
+                for(let i = 0; i < numberButtonEl.length; i++){
+                    numberButtonEl[i].classList.remove('grey-yellow-key-background' , 'dark-grey-yellow-text')
+                    numberButtonEl[i].classList.add('very-dark-purple-key-background' , 'light-yellow-text')
+                    numberButtonEl[i].classList.remove('grey-orange-background' ,'dark-grey-blue-text')
+                }
+                //Operator keys
+                for(let i = 0; i < operatorButtonEl.length; i++){
+                    operatorButtonEl[i].classList.remove('grey-yellow-key-background' , 'dark-grey-yellow-text')
+                    operatorButtonEl[i].classList.add('very-dark-purple-key-background' , 'light-yellow-text')
+                    operatorButtonEl[i].classList.remove('grey-orange-background' ,'dark-grey-blue-text')
+                }
             }
         })
     }

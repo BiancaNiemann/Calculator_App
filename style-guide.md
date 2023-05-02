@@ -66,7 +66,7 @@ The designs were created to the following widths:
 
 #### Keys
 
-- Dark violet (key background): hsl(281, 89%, 26%)
+- Dark violet (key background):  hsl(177, 92%, 70%)
 - Vivid magenta (key shadow): hsl(285, 91%, 52%)
 
 - Pure cyan (key background, toggle): hsl(176, 100%, 44%)
