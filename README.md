@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/BiancaNiemann/Calculator_App)
-- Live Site URL: [Add live site URL here](https://biancaniemann.github.io/Calculator_App/)
+- Solution URL: [https://github.com/BiancaNiemann/Calculator_App](https://github.com/BiancaNiemann/Calculator_App)
+- Live Site URL: [https://biancaniemann.github.io/Calculator_App/](https://biancaniemann.github.io/Calculator_App/)
 
 ## My process
 
